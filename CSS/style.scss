@@ -65,7 +65,7 @@ html {
         &--text-container {
           z-index: 2;
           &-heading {
-            @include fontStyle("Rufina", 700, 148px, 152px, $white);
+            @include fontStyle("Rufina", 700, 14.8rem, 152px, $white);
             max-width: 1057px;
           }
           &-title {
@@ -94,8 +94,8 @@ html {
           right: 0;
         }
         & .hero-spice-img {
-          width: 260px;
-          height: 240px;
+          width: 26rem;
+          height: 24rem;
           z-index: 10;
           position: absolute;
           top: 880px;
@@ -116,14 +116,14 @@ html {
         gap: 344px;
         &--left {
           &--heading {
-            @include fontStyle("Rufina", 700, 68px, 84px, $white);
-            max-width: 493px;
+            @include fontStyle("Rufina", 700, 6.8rem, 8.4rem, $white);
+            max-width: 49.3rem;
             margin-top: 54px;
           }
           &--text {
-            @include fontStyle("Lato", 400, 24px, 140%, $white);
-            max-width: 565px;
-            margin-top: 54px;
+            @include fontStyle("Lato", 400, 2.4rem, 140%, $white);
+            max-width: 56.5rem;
+            margin-top: 5.4rem;
           }
           & > img {
             width: 100%;
@@ -131,14 +131,112 @@ html {
         }
         &--right {
           &--text {
-            @include fontStyle("Lato", 400, 24px, 140%, $white);
-            max-width: 508px;
+            @include fontStyle("Lato", 400, 2.4rem, 140%, $white);
+            max-width: 50.8rem;
           }
           & > img {
             margin-top: 84px;
             width: 100%;
           }
         }
+      }
+    }
+  }
+  & .menu-container {
+    background-color: $white;
+    background-image: url(../assets/images/bg-01.png);
+    background-repeat: no-repeat;
+    background-position: right top;
+    padding: 176px 138px 218px 138px;
+    &__header {
+      &--heading {
+        @include fontStyle("Rufina", 700, 10.8rem, 12rem, $black);
+      }
+      &--title {
+        @include fontStyle("Lato", 400, 2.4rem, 140%, $darkGray);
+        max-width: 532px;
+      }
+    }
+    & .menu-container__items {
+      margin-top: 158px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(729px, 1fr));
+      column-gap: 60px;
+      row-gap: 108px;
+      &--item {
+        max-width: 729px;
+        display: flex;
+        flex-direction: column;
+        &--price {
+          @include fontStyle("Rufina", 700, 4.8rem, 6.4rem, $black);
+          align-self: flex-end;
+        }
+        & > img {
+          margin-top: 12px;
+        }
+        &--name {
+          @include fontStyle("Rufina", 700, 6.8rem, 8.4rem, $black);
+          margin-top: 24px;
+        }
+        &--text {
+          @include fontStyle("Lato", 400, 2.4rem, 140%, $darkGray);
+          margin-top: 24px;
+        }
+      }
+    }
+  }
+  & .cook-container {
+    display: flex;
+    padding: 222px 138px 0 138px;
+    background-color: $lightGreen;
+    position: relative;
+    height: 1130px;
+    & > img {
+      bottom: 0;
+      left: 120px;
+      position: absolute;
+    }
+    &__text {
+      max-width: 649px;
+      position: absolute;
+      right: 0;
+      right: 138px;
+      &--heading {
+        @include fontStyle("Rufina", 700, 10.8rem, 12rem, $black);
+      }
+      &--text {
+        @include fontStyle("Lato", 400, 2.4rem, 140%, $darkGray);
+      }
+    }
+  }
+
+  & .quality-container {
+    padding: 207px 138px 190px 138px;
+    display: flex;
+    gap: 60px;
+    flex-wrap: wrap;
+    &__items-container {
+      width: 508px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 39px;
+      & .quality-icon-container {
+        width: 260px;
+        height: 260px;
+        background-color: $lightGreen;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      &--heading {
+        @include fontStyle("Rufina", 700, 4.8rem, 6.4rem, $black);
+        text-align: center;
+      }
+      &--text {
+        @include fontStyle("Lato", 400, 2.4rem, 140%, $darkGray);
+        text-align: center;
       }
     }
   }
