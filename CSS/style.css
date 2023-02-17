@@ -2,8 +2,41 @@
 * {
   margin: 0;
   padding: 0;
+}
+
+*,
+*::before,
+*::after {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+/* Reset paragraph and heding overflow */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/* Reset image size */
+image,
+svg,
+picture,
+canvas,
+video {
+  max-width: 100%;
+  display: block;
+}
+
+input,
+button,
+textarea,
+select {
+  font-family: inherit;
 }
 
 /* Default font size */
@@ -351,4 +384,505 @@ html {
   line-height: 140%;
   color: #4d4d4d;
   text-align: center;
+}
+
+/* Blog post section styling */
+.blog-container {
+  padding: 130px 138px 105px 138px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 60px;
+}
+.blog-container .blog-post {
+  max-width: 792px;
+}
+.blog-container .blog-post__img-container {
+  position: relative;
+}
+.blog-container .blog-post__img-container > img {
+  width: 100%;
+}
+.blog-container .blog-post .fashion-container {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 203px;
+  height: 62px;
+  background-color: #5e6600;
+  -webkit-box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.08);
+          box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.08);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.blog-container .blog-post .fashion-container > p {
+  font-family: "Rufina";
+  font-weight: 700;
+  font-size: 2.6rem;
+  line-height: 4.8rem;
+  color: #ffffff;
+}
+.blog-container .blog-post__text-container {
+  padding: 68px 75px 82px 72px;
+}
+.blog-container .blog-post__text-container .title-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 14px;
+}
+.blog-container .blog-post__text-container .title-container > p {
+  font-family: "Lato";
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 2.2rem;
+  color: #5e6600;
+  letter-spacing: 0.02em;
+}
+.blog-container .blog-post__text-container .text-container__heading {
+  font-family: "Rufina";
+  font-weight: 700;
+  font-size: 4.8rem;
+  line-height: 6.4rem;
+  color: #000000;
+  margin-top: 48px;
+}
+.blog-container .blog-post__text-container .text-container > img {
+  margin-top: 18px;
+  width: 100%;
+}
+.blog-container .blog-post__text-container .text-container__text {
+  font-family: "Lato";
+  font-weight: 700;
+  font-size: 2.2rem;
+  line-height: 140%;
+  color: #4d4d4d;
+  margin-top: 18px;
+}
+.blog-container .blog-post__text-container .text-container__link {
+  text-decoration: none;
+}
+.blog-container .blog-post__text-container .text-container__link .link-container {
+  display: inline-block;
+  margin-top: 46px;
+}
+.blog-container .blog-post__text-container .text-container__link .link-container > p {
+  font-family: "Lato";
+  font-weight: 400;
+  font-size: 2.4rem;
+  line-height: 140%;
+  color: #000000;
+  display: inline-block;
+  margin-right: 10px;
+}
+.blog-container .blog-post__text-container .text-container__link .link-container > img {
+  width: 36px;
+}
+
+/* Reservation section styling */
+.reservation-container {
+  padding: 237px 138px 254px 138px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #ebf0e4;
+}
+.reservation-container__heading {
+  font-family: "Rufina";
+  font-weight: 700;
+  font-size: 10.8rem;
+  line-height: 12rem;
+  color: #000000;
+}
+.reservation-container__title {
+  font-family: "Lato";
+  font-weight: 400;
+  font-size: 2.4rem;
+  line-height: 140%;
+  color: #4d4d4d;
+  margin-top: 18px;
+}
+.reservation-container .reservation-form {
+  margin-top: 133px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 133px;
+}
+.reservation-container .reservation-form__input-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 48px;
+}
+.reservation-container .reservation-form__input-container > input, .reservation-container .reservation-form__input-container > select {
+  width: 516px;
+  height: 96px;
+  border: 2px solid #000000;
+  background: transparent;
+  font-family: "Lato";
+  font-weight: 400;
+  font-size: 2.4rem;
+  line-height: 140%;
+  color: #000000;
+  padding-left: 40px;
+}
+.reservation-container .reservation-form__input-container input[type=date]::-webkit-inner-spin-button,
+.reservation-container .reservation-form__input-container input[type=date]::-webkit-calendar-picker-indicator {
+  display: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+.reservation-container .reservation-form__input-container > select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: transparent;
+  background-image: url(../assets/icons/angle-down-dark-icon.svg);
+  background-repeat: no-repeat;
+  background-position-x: calc(100% - 40px);
+  background-position-y: 50%;
+}
+.reservation-container .reservation-form__input-container > select .option-style {
+  background-color: #ebf0e4;
+  font-style: "Lato";
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+.reservation-container .reservation-form > button {
+  width: 344px;
+  height: 80px;
+  background-color: #233000;
+  border: 2px solid #000000;
+  font-family: "Rufina";
+  font-weight: 700;
+  font-size: 3.2rem;
+  line-height: 4.8rem;
+  color: #ffffff;
+}
+
+/* Product section styling */
+.product-container {
+  padding: 128px 138px 138px 138px;
+}
+.product-container__text-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.product-container__text-container--heading {
+  font-family: "Rufina";
+  font-weight: 700;
+  font-size: 10.8rem;
+  line-height: 12rem;
+  color: #000000;
+  max-width: 1101px;
+  text-align: center;
+}
+.product-container__text-container--title {
+  font-family: "Lato";
+  font-weight: 400;
+  font-size: 2.4rem;
+  line-height: 140%;
+  color: #233000;
+  text-align: center;
+  margin-top: 18px;
+}
+.product-container .product-container__products {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 60px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 126px;
+}
+.product-container .product-container__products .image-container-01 {
+  padding: 48px 48px 598px 40px;
+  max-width: 508px;
+  background-image: url(../assets/images/category-image-01.png);
+}
+.product-container .product-container__products .image-container-01__text-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 194px;
+  width: 100%;
+}
+.product-container .product-container__products .image-container-01__text-container > p {
+  font-family: "Rufina";
+  font-weight: 700;
+  font-size: 4.8rem;
+  line-height: 6.4rem;
+  color: #233000;
+}
+.product-container .product-container__products .image-container-02 {
+  padding: 48px 48px 598px 40px;
+  max-width: 508px;
+  background-image: url(../assets/images/category-image-02.png);
+}
+.product-container .product-container__products .image-container-02__text-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 194px;
+}
+.product-container .product-container__products .image-container-02__text-container > p {
+  font-family: "Rufina";
+  font-weight: 700;
+  font-size: 4.8rem;
+  line-height: 6.4rem;
+  color: #233000;
+}
+.product-container .product-container__products .image-container-03 {
+  padding: 48px 48px 598px 40px;
+  max-width: 508px;
+  background-image: url(../assets/images/category-image-03.png);
+}
+.product-container .product-container__products .image-container-03__text-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 194px;
+}
+.product-container .product-container__products .image-container-03__text-container > p {
+  font-family: "Rufina";
+  font-weight: 700;
+  font-size: 4.8rem;
+  line-height: 6.4rem;
+  color: #233000;
+}
+
+/* Testimonial section styling */
+.testimonial-container {
+  padding: 118px 229px 145px 246px;
+  position: relative;
+}
+.testimonial-container__text {
+  font-family: "Rufina";
+  font-weight: 700;
+  font-size: 4.8rem;
+  line-height: 6.4rem;
+  color: #000000;
+  max-width: 1262px;
+}
+.testimonial-container__author-container {
+  width: 100%;
+  margin-top: 86px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.testimonial-container__author-container .author-container__internal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 60px;
+}
+.testimonial-container__author-container .author-container__internal .avatar-container__text-container--name {
+  font-family: "Rufina";
+  font-weight: 700;
+  font-size: 3.2rem;
+  line-height: 4rem;
+  color: #000000;
+}
+.testimonial-container__author-container .author-container__internal .avatar-container__text-container--profession {
+  font-family: "Lato";
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 2.2rem;
+  color: #4d4d4d;
+  margin-top: 6px;
+}
+.testimonial-container__author-container .arrow-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 40px;
+}
+.testimonial-container__author-container .arrow-container > p {
+  font-family: "Rufino";
+  font-weight: 700;
+  font-size: 3.2rem;
+  line-height: 4.8rem;
+  color: #000000;
+}
+.testimonial-container > img {
+  position: absolute;
+  top: 118px;
+  right: 255px;
+}
+
+.footer-up__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #233000;
+  padding: 132px 138px 137px 138px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.footer-up__container--heading {
+  font-family: "Rufina";
+  font-weight: 700;
+  font-size: 6.8rem;
+  line-height: 8.4rem;
+  color: #ffffff;
+}
+.footer-up__container .footer-up__menu {
+  list-style: none;
+}
+.footer-up__container .footer-up__menu-item--01 {
+  font-family: "Rufina";
+  font-weight: 700;
+  font-size: 3.2rem;
+  line-height: 4.8rem;
+  color: #ffffff;
+}
+.footer-up__container .footer-up__menu-item {
+  font-family: "Lato";
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 2.5rem;
+  color: #ffffff;
+}
+.footer-up__container .footer-up__menu-item-02 {
+  margin-top: 55px;
+}
+.footer-up__container .footer-up__menu-item-03 {
+  margin-top: 28px;
+}
+.footer-up__container .footer-up__subscribe-container--title {
+  font-family: "Rufina";
+  font-weight: 700;
+  font-size: 3.2rem;
+  line-height: 4.8rem;
+  color: #ffffff;
+}
+.footer-up__container .footer-up__subscribe-container > input {
+  width: 522px;
+  height: 96px;
+  border: 2px solid #ffffff;
+  background-color: #233000;
+  padding-left: 40px;
+  margin-top: 55px;
+  margin-right: 28px;
+  outline: none;
+  font-family: "Lato";
+  font-weight: 400;
+  font-size: 2.4rem;
+  line-height: 140%;
+  color: #ffffff;
+}
+.footer-up__container .footer-up__subscribe-container > input:-moz-placeholder-shown {
+  font-family: "Lato";
+  font-weight: 400;
+  font-size: 2.4rem;
+  line-height: 140%;
+  color: #ffffff;
+}
+.footer-up__container .footer-up__subscribe-container > input:-ms-input-placeholder {
+  font-family: "Lato";
+  font-weight: 400;
+  font-size: 2.4rem;
+  line-height: 140%;
+  color: #ffffff;
+}
+.footer-up__container .footer-up__subscribe-container > input:placeholder-shown {
+  font-family: "Lato";
+  font-weight: 400;
+  font-size: 2.4rem;
+  line-height: 140%;
+  color: #ffffff;
+}
+.footer-up__container .footer-up__subscribe-container > button {
+  width: 241px;
+  height: 88px;
+  background-color: #5e6600;
+  border: none;
+  font-family: "Rufina";
+  font-weight: 700;
+  font-size: 3.2rem;
+  line-height: 4.8rem;
+  color: #ffffff;
+}
+.footer-up__container .footer-up__subscribe-container-text {
+  font-family: "Lato";
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 1.7rem;
+  color: #ffffff;
+  margin-top: 15px;
+}
+
+.footer-down__container {
+  border-top: 2px dashed #ffffff;
+  background-color: #233000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 58px 162px 74px 138px;
+}
+.footer-down__container > p {
+  font-family: "Lato";
+  font-weight: 400;
+  font-size: 2.4rem;
+  line-height: 140%;
+  color: #ffffff;
+}
+.footer-down__container .footer__social-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 28px;
 }

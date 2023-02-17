@@ -241,3 +241,323 @@ html {
     }
   }
 }
+
+/* Blog post section styling */
+
+.blog-container {
+  padding: 130px 138px 105px 138px;
+  display: flex;
+  gap: 60px;
+  & .blog-post {
+    max-width: 792px;
+    &__img-container {
+      position: relative;
+    }
+    &__img-container > img {
+      width: 100%;
+    }
+    & .fashion-container {
+      position: absolute;
+      top: 12px;
+      right: 12px;
+      width: 203px;
+      height: 62px;
+      background-color: $middleGreen;
+      box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.08);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      & > p {
+        @include fontStyle("Rufina", 700, 2.6rem, 4.8rem, $white);
+      }
+    }
+    &__text-container {
+      padding: 68px 75px 82px 72px;
+      & .title-container {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+        & > p {
+          @include fontStyle("Lato", 400, 1.8rem, 2.2rem, $middleGreen);
+          letter-spacing: 0.02em;
+        }
+      }
+      & .text-container {
+        &__heading {
+          @include fontStyle("Rufina", 700, 4.8rem, 6.4rem, $black);
+          margin-top: 48px;
+        }
+        & > img {
+          margin-top: 18px;
+          width: 100%;
+        }
+        &__text {
+          @include fontStyle("Lato", 700, 2.2rem, 140%, $darkGray);
+          margin-top: 18px;
+        }
+        &__link {
+          text-decoration: none;
+          & .link-container {
+            display: inline-block;
+            margin-top: 46px;
+            & > p {
+              @include fontStyle("Lato", 400, 2.4rem, 140%, $black);
+              display: inline-block;
+              margin-right: 10px;
+            }
+            & > img {
+              width: 36px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/* Reservation section styling */
+
+.reservation-container {
+  padding: 237px 138px 254px 138px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $lightGreen;
+  &__heading {
+    @include fontStyle("Rufina", 700, 10.8rem, 12rem, $black);
+  }
+  &__title {
+    @include fontStyle("Lato", 400, 2.4rem, 140%, $darkGray);
+    margin-top: 18px;
+  }
+  & .reservation-form {
+    margin-top: 133px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 133px;
+    &__input-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 48px;
+      & > input,
+      & > select {
+        width: 516px;
+        height: 96px;
+        border: 2px solid $black;
+        background: transparent;
+        @include fontStyle("Lato", 400, 2.4rem, 140%, $black);
+        padding-left: 40px;
+      }
+      & input[type="date"]::-webkit-inner-spin-button,
+      input[type="date"]::-webkit-calendar-picker-indicator {
+        display: none;
+        -moz-appearance: none;
+        -webkit-appearance: none;
+      }
+      & > select {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        background: transparent;
+        background-image: url(../assets/icons/angle-down-dark-icon.svg);
+        background-repeat: no-repeat;
+        background-position-x: calc(100% - 40px);
+        background-position-y: 50%;
+        .option-style {
+          background-color: $lightGreen;
+          font-style: "Lato";
+          -webkit-appearance: none;
+          -moz-appearance: none;
+          appearance: none;
+        }
+      }
+    }
+    & > button {
+      width: 344px;
+      height: 80px;
+      background-color: $darkGreen;
+      border: 2px solid #000000;
+      @include fontStyle("Rufina", 700, 3.2rem, 4.8rem, $white);
+    }
+  }
+}
+
+/* Product section styling */
+
+.product-container {
+  padding: 128px 138px 138px 138px;
+  &__text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &--heading {
+      @include fontStyle("Rufina", 700, 10.8rem, 12rem, $black);
+      max-width: 1101px;
+      text-align: center;
+    }
+    &--title {
+      @include fontStyle("Lato", 400, 2.4rem, 140%, $darkGreen);
+      text-align: center;
+      margin-top: 18px;
+    }
+  }
+  & .product-container__products {
+    display: flex;
+    gap: 60px;
+    flex-wrap: wrap;
+    margin-top: 126px;
+    & .image-container-01 {
+      padding: 48px 48px 598px 40px;
+      max-width: 508px;
+      background-image: url(../assets/images/category-image-01.png);
+      &__text-container {
+        display: flex;
+        gap: 194px;
+        width: 100%;
+        & > p {
+          @include fontStyle("Rufina", 700, 4.8rem, 6.4rem, $darkGreen);
+        }
+      }
+    }
+    & .image-container-02 {
+      padding: 48px 48px 598px 40px;
+      max-width: 508px;
+      background-image: url(../assets/images/category-image-02.png);
+      &__text-container {
+        display: flex;
+        gap: 194px;
+        & > p {
+          @include fontStyle("Rufina", 700, 4.8rem, 6.4rem, $darkGreen);
+        }
+      }
+    }
+    & .image-container-03 {
+      padding: 48px 48px 598px 40px;
+      max-width: 508px;
+      background-image: url(../assets/images/category-image-03.png);
+      &__text-container {
+        display: flex;
+        gap: 194px;
+        & > p {
+          @include fontStyle("Rufina", 700, 4.8rem, 6.4rem, $darkGreen);
+        }
+      }
+    }
+  }
+}
+
+/* Testimonial section styling */
+
+.testimonial-container {
+  padding: 118px 229px 145px 246px;
+  position: relative;
+  &__text {
+    @include fontStyle("Rufina", 700, 4.8rem, 6.4rem, $black);
+    max-width: 1262px;
+  }
+  &__author-container {
+    width: 100%;
+    margin-top: 86px;
+    display: flex;
+    justify-content: space-between;
+    & .author-container__internal {
+      display: flex;
+      align-items: center;
+      gap: 60px;
+      & .avatar-container__text-container {
+        &--name {
+          @include fontStyle("Rufina", 700, 3.2rem, 4rem, $black);
+        }
+        &--profession {
+          @include fontStyle("Lato", 400, 1.8rem, 2.2rem, $darkGray);
+          margin-top: 6px;
+        }
+      }
+    }
+    & .arrow-container {
+      display: flex;
+      align-items: center;
+      gap: 40px;
+      & > p {
+        @include fontStyle("Rufino", 700, 3.2rem, 4.8rem, $black);
+      }
+    }
+  }
+  & > img {
+    position: absolute;
+    top: 118px;
+    right: 255px;
+  }
+}
+
+.footer-up__container {
+  display: flex;
+  background-color: $darkGreen;
+  padding: 132px 138px 137px 138px;
+  justify-content: space-between;
+  align-items: center;
+  &--heading {
+    @include fontStyle("Rufina", 700, 6.8rem, 8.4rem, $white);
+  }
+  & .footer-up__menu {
+    list-style: none;
+    &-item--01 {
+      @include fontStyle("Rufina", 700, 3.2rem, 4.8rem, $white);
+    }
+    &-item {
+      @include fontStyle("Lato", 400, 1.8rem, 2.5rem, $white);
+    }
+    &-item-02 {
+      margin-top: 55px;
+    }
+    &-item-03 {
+      margin-top: 28px;
+    }
+  }
+  & .footer-up__subscribe-container {
+    &--title {
+      @include fontStyle("Rufina", 700, 3.2rem, 4.8rem, $white);
+    }
+    & > input {
+      width: 522px;
+      height: 96px;
+      border: 2px solid $white;
+      background-color: $darkGreen;
+      padding-left: 40px;
+      margin-top: 55px;
+      margin-right: 28px;
+      outline: none;
+      @include fontStyle("Lato", 400, 2.4rem, 140%, $white);
+      &:placeholder-shown {
+        @include fontStyle("Lato", 400, 2.4rem, 140%, $white);
+      }
+    }
+    & > button {
+      width: 241px;
+      height: 88px;
+      background-color: $middleGreen;
+      border: none;
+      @include fontStyle("Rufina", 700, 3.2rem, 4.8rem, $white);
+    }
+    &-text {
+      @include fontStyle("Lato", 400, 1.4rem, 1.7rem, $white);
+      margin-top: 15px;
+    }
+  }
+}
+
+.footer-down__container {
+  border-top: 2px dashed $white;
+  background-color: $darkGreen;
+  display: flex;
+  justify-content: space-between;
+  padding: 58px 162px 74px 138px;
+  & > p {
+    @include fontStyle("Lato", 400, 2.4rem, 140%, $white);
+  }
+  & .footer__social-container {
+    display: flex;
+    gap: 28px;
+  }
+}

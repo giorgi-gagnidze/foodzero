@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./CSS/style.css" />
     <link rel="stylesheet" href="./CSS/fonts.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/css/bootstrap-select.min.css"
+    />
     <meta property="og:title" content="FoodZero" />
     <meta property="og:description" content="Only for Healthy food fans" />
     <meta
@@ -183,6 +187,208 @@
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque
             congue arcu
           </p>
+        </div>
+      </section>
+
+      <!-- Blog post section -->
+
+      <section class="blog-container">
+        <article class="blog-post">
+          <div class="blog-post__img-container">
+            <img src="./assets/images/image-04.png" alt="some food" />
+            <div class="fashion-container">
+              <p>Fashion</p>
+            </div>
+          </div>
+          <div class="blog-post__text-container">
+            <div class="title-container">
+              <img src="./assets/images/avata-01.png" alt="avatar of author" />
+              <p class="title-container--author-name">Julie Christie</p>
+              <img src="./assets/icons/divider.svg" alt="word divider" />
+              <p class="title-container--post-date">October 17,2021</p>
+              <img src="./assets/icons/divider.svg" alt="word divider" />
+              <p class="title-container--post-time">3:33 pm</p>
+              <img src="./assets/icons/divider.svg" alt="word divider" />
+              <p class="title-container--comment-qt">2 comments</p>
+            </div>
+            <div class="text-container">
+              <p class="text-container__heading">
+                Fruit and vegetables and protection against diseases
+              </p>
+              <img src="./assets/images/line-blog.png" alt="line dashed" />
+              <p class="text-container__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </p>
+              <a href="#" class="text-container__link">
+                <div class="link-container">
+                  <p>Learn More</p>
+                  <img src="./assets/icons/arrow-right-green-icon.svg" alt="" />
+                </div>
+              </a>
+            </div>
+          </div>
+        </article>
+        <article class="blog-post">
+          <div class="blog-post__img-container">
+            <img src="./assets/images/image-05.png" alt="some food" />
+            <div class="fashion-container">
+              <p>Fashion</p>
+            </div>
+          </div>
+          <div class="blog-post__text-container">
+            <div class="title-container">
+              <img src="./assets/images/avatar-02.png" alt="avatar of author" />
+              <p class="title-container--author-name">Dianne Russell</p>
+              <img src="./assets/icons/divider.svg" alt="word divider" />
+              <p class="title-container--post-date">October 17,2021</p>
+              <img src="./assets/icons/divider.svg" alt="word divider" />
+              <p class="title-container--post-time">3:33 pm</p>
+              <img src="./assets/icons/divider.svg" alt="word divider" />
+              <p class="title-container--comment-qt">2 comments</p>
+            </div>
+            <div class="text-container">
+              <p class="text-container__heading">
+                Asparagus Spring Salad with Rocket, Goat's Cheese
+              </p>
+              <img src="./assets/images/line-blog.png" alt="line dashed" />
+              <p class="text-container__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </p>
+              <a href="#" class="text-container__link">
+                <div class="link-container">
+                  <p>Learn More</p>
+                  <img src="./assets/icons/arrow-right-green-icon.svg" alt="" />
+                </div>
+              </a>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <!-- Reservation section -->
+
+      <section class="reservation-container">
+        <p class="reservation-container__heading">Make a Reservation</p>
+        <p class="reservation-container__title">Get in touch with restaurant</p>
+        <form class="reservation-form">
+          <div class="reservation-form__input-container">
+            <input type="date" name="date" id="date" value="2023-02-17" />
+            <select name="time" id="time" autocomplete="off">
+              <option value="01:00" class="option-style">01:00 pm</option>
+              <option value="02:00" class="option-style">02:00 pm</option>
+              <option value="03:00" class="option-style">03:00 pm</option>
+              <option value="04:00" class="option-style">04:00 pm</option>
+              <option value="05:00" class="option-style">05:00 pm</option>
+              <option value="06:00" class="option-style" selected>
+                06:00 pm
+              </option>
+              <option value="07:00" class="option-style">07:00 pm</option>
+              <option value="08:00" class="option-style">08:00 pm</option>
+            </select>
+            <select name="person" id="person" autocomplete="off">
+              <option value="1" class="option-style">1 Person</option>
+              <option value="2" selected class="option-style">2 Person</option>
+              <option value="3" class="option-style">3 Person</option>
+              <option value="4" class="option-style">4 Person</option>
+              <option value="5" class="option-style">5 Person</option>
+            </select>
+          </div>
+          <button>Book Now</button>
+        </form>
+      </section>
+
+      <!-- Product section -->
+
+      <section class="product-container">
+        <div class="product-container__text-container">
+          <p class="product-container__text-container--heading">
+            Calories Energy Balance
+          </p>
+          <p class="product-container__text-container--title">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </p>
+        </div>
+        <div class="product-container__products">
+          <div class="image-container-01">
+            <div class="image-container-01__text-container">
+              <p>Starters</p>
+              <img src="./assets/icons/arrow-right-green-icon.svg" alt="" />
+            </div>
+          </div>
+          <div class="image-container-02">
+            <div class="image-container-02__text-container">
+              <p>Mains</p>
+              <img src="./assets/icons/arrow-right-green-icon.svg" alt="" />
+            </div>
+          </div>
+          <div class="image-container-03">
+            <div class="image-container-03__text-container">
+              <p>Soups</p>
+              <img src="./assets/icons/arrow-right-green-icon.svg" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Testimonial section -->
+
+      <section class="testimonial-container">
+        <p class="testimonial-container__text">
+          “ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus lorem
+          id penatibus imperdiet. Turpis egestas ultricies purus Lorem ipsum
+          dolor sit amet.
+        </p>
+        <img src="./assets/images/quotes.png" alt="quotes" />
+        <div class="testimonial-container__author-container">
+          <div class="author-container__internal">
+            <img src="./assets/images/avatar-03.png" alt="" />
+            <div class="avatar-container__text-container">
+              <p class="avatar-container__text-container--name">John Doe</p>
+              <p class="avatar-container__text-container--profession">
+                Blogger
+              </p>
+            </div>
+          </div>
+          <div class="arrow-container">
+            <img src="./assets/icons/arrow-left-green_icon.svg" alt="" />
+            <p>2/3</p>
+            <img src="./assets/icons/arrow-right-green-icon.svg" alt="" />
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer ection -->
+
+      <section class="footer-up__container">
+        <p class="footer-up__container--heading">Food <br />Zero.</p>
+        <ul class="footer-up__menu">
+          <li class="footer-up__menu-item--01">Contacts</li>
+          <li class="footer-up__menu-item footer-up__menu-item-02">
+            +1+86 852 346 000<br />info@foodzero.com
+          </li>
+          <li class="footer-up__menu-item footer-up__menu-item-03">
+            info@foodzero.com <br />Culver City, CA, 90230
+          </li>
+          <li></li>
+        </ul>
+        <div class="footer-up__subscribe-container">
+          <p class="footer-up__subscribe-container--title">
+            Never Miss a Recipe
+          </p>
+          <input type="email" placeholder="Email Address" />
+          <button>Subscribe</button>
+          <p class="footer-up__subscribe-container-text">
+            Join our subscribers and get best recipe delivered each week!
+          </p>
+        </div>
+      </section>
+      <section class="footer-down__container">
+        <p>&copy; 2020 Zero Inc. All rights Reserved</p>
+        <div class="footer__social-container">
+          <img src="./assets/icons/instagram_icon.svg" alt="instagram logo" />
+          <img src="./assets/icons/twitter_icon.svg" alt="twitter logo" />
+          <img src="./assets/icons/facebook_icon.svg" alt="facebook logo" />
+          <img src="./assets/icons/youtube icon.svg" alt="youtube logo" />
         </div>
       </section>
     </main>
