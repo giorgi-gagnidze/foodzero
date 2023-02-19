@@ -1,0 +1,648 @@
+/* Reset some CSS default styles */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* Reset paragraph and heding overflow */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/* Reset image size */
+image,
+svg,
+picture,
+canvas,
+video {
+  max-width: 100%;
+  display: block;
+}
+
+input,
+button,
+textarea,
+select {
+  font-family: inherit;
+}
+
+/* Default font size */
+html {
+  font-size: 62.5%;
+}
+
+.main-container {
+  max-width: 1920px;
+  /* Header styling */
+  /* Reservation section styling */
+}
+.main-container .header-section {
+  background-image: url(../assets/images/menu-page/header-bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.main-container .header-section .header-container {
+  padding: 46px 138px 47px 138px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.main-container .header-section .header-container .logo-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 69px;
+}
+.main-container .header-section .header-container .logo-container > img {
+  width: 307px;
+  height: 115px;
+  margin-left: -20px;
+}
+.main-container .header-section .header-container .hamburger-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 14px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.main-container .header-section .header-container .hamburger-menu > div {
+  border: 2px solid #ffffff;
+  width: 46px;
+}
+.main-container .header-section .header-container .right-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 26px;
+}
+.main-container .header-section .header-container .right-container .header-phone {
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 31px;
+  color: #ffffff;
+}
+.main-container .header-section .header-container .right-container > a {
+  font-family: "Rufina", serif;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 48px;
+  color: #ffffff;
+  padding: 20px 46px;
+  border: 2px solid #ffffff;
+  text-decoration: none;
+}
+.main-container .header-section .hero-container {
+  padding-top: 142px;
+  padding-left: 138px;
+  padding-bottom: 328px;
+}
+.main-container .header-section .hero-container__heading {
+  font-family: "Rufina", serif;
+  font-weight: 700;
+  font-size: 14.8rem;
+  line-height: 15.2rem;
+  color: #ffffff;
+  max-width: 779px;
+}
+.main-container .header-section .hero-container__text {
+  font-family: "Rufina", serif;
+  font-weight: 700;
+  font-size: 3.2rem;
+  line-height: 4.8rem;
+  color: #ffffff;
+  margin-top: 50px;
+}
+.main-container .menu-section__one {
+  padding: 122px 178px 140px 138px;
+  background-image: url(../assets/images/menu-page/blueberry.png);
+  background-repeat: no-repeat;
+  background-position: top right;
+}
+.main-container .menu-section__one--heading-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.main-container .menu-section__one--heading-container--heading {
+  font-family: "Rufina", serif;
+  font-weight: 700;
+  font-size: 10.8rem;
+  line-height: 12rem;
+  color: #000000;
+}
+.main-container .menu-section__one--heading-container--title {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 2.4rem;
+  line-height: 140%;
+  color: #4d4d4d;
+  margin-top: 18px;
+}
+.main-container .menu-section__one .menu-container {
+  margin-top: 81px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 102px;
+}
+.main-container .menu-section__one .menu-container .menu-image-container > img {
+  width: 100%;
+}
+.main-container .menu-section__one .menu-container .menu-text-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 58px;
+}
+.main-container .menu-section__one .menu-container .menu-text-container .menu-item-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.main-container .menu-section__one .menu-container .menu-text-container .menu-item-container__price {
+  font-family: "Rufina", serif;
+  font-weight: 700;
+  font-size: 4.8rem;
+  line-height: 6.4rem;
+  color: #000000;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+.main-container .menu-section__one .menu-container .menu-text-container .menu-item-container__text-container {
+  margin-top: 12px;
+  border-top: 4px dashed #000000;
+}
+.main-container .menu-section__one .menu-container .menu-text-container .menu-item-container__text-container--heading {
+  font-family: "Rufina", serif;
+  font-weight: 700;
+  font-size: 6.8rem;
+  line-height: 8.4rem;
+  color: #000000;
+  margin-top: 24px;
+}
+.main-container .menu-section__one .menu-container .menu-text-container .menu-item-container__text-container--text {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 2.4rem;
+  line-height: 140%;
+  color: #4d4d4d;
+  margin-top: 24px;
+}
+.main-container .menu-section__two {
+  padding: 122px 178px 140px 138px;
+}
+.main-container .menu-section__two--heading-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.main-container .menu-section__two--heading-container--heading {
+  font-family: "Rufina", serif;
+  font-weight: 700;
+  font-size: 10.8rem;
+  line-height: 12rem;
+  color: #000000;
+}
+.main-container .menu-section__two--heading-container--title {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 2.4rem;
+  line-height: 140%;
+  color: #4d4d4d;
+  margin-top: 18px;
+}
+.main-container .menu-section__two .menu-container {
+  margin-top: 81px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 102px;
+}
+.main-container .menu-section__two .menu-container .menu-image-container > img {
+  width: 100%;
+}
+.main-container .menu-section__two .menu-container .menu-text-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 58px;
+}
+.main-container .menu-section__two .menu-container .menu-text-container .menu-item-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.main-container .menu-section__two .menu-container .menu-text-container .menu-item-container__price {
+  font-family: "Rufina", serif;
+  font-weight: 700;
+  font-size: 4.8rem;
+  line-height: 6.4rem;
+  color: #000000;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+.main-container .menu-section__two .menu-container .menu-text-container .menu-item-container__text-container {
+  margin-top: 12px;
+  border-top: 4px dashed #000000;
+}
+.main-container .menu-section__two .menu-container .menu-text-container .menu-item-container__text-container--heading {
+  font-family: "Rufina", serif;
+  font-weight: 700;
+  font-size: 6.8rem;
+  line-height: 8.4rem;
+  color: #000000;
+  margin-top: 24px;
+}
+.main-container .menu-section__two .menu-container .menu-text-container .menu-item-container__text-container--text {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 2.4rem;
+  line-height: 140%;
+  color: #4d4d4d;
+  margin-top: 24px;
+}
+.main-container .menu-section__three {
+  padding: 122px 178px 208px 138px;
+  background-image: url(../assets/images/menu-page/avocado.png);
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+.main-container .menu-section__three--heading-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.main-container .menu-section__three--heading-container--heading {
+  font-family: "Rufina", serif;
+  font-weight: 700;
+  font-size: 10.8rem;
+  line-height: 12rem;
+  color: #000000;
+}
+.main-container .menu-section__three--heading-container--title {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 2.4rem;
+  line-height: 140%;
+  color: #4d4d4d;
+  margin-top: 18px;
+}
+.main-container .menu-section__three .menu-container {
+  margin-top: 153px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 102px;
+}
+.main-container .menu-section__three .menu-container .menu-image-container > img {
+  width: 100%;
+}
+.main-container .menu-section__three .menu-container .menu-text-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 58px;
+}
+.main-container .menu-section__three .menu-container .menu-text-container .menu-item-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.main-container .menu-section__three .menu-container .menu-text-container .menu-item-container__price {
+  font-family: "Rufina", serif;
+  font-weight: 700;
+  font-size: 4.8rem;
+  line-height: 6.4rem;
+  color: #000000;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+.main-container .menu-section__three .menu-container .menu-text-container .menu-item-container__text-container {
+  margin-top: 12px;
+  border-top: 4px dashed #000000;
+}
+.main-container .menu-section__three .menu-container .menu-text-container .menu-item-container__text-container--heading {
+  font-family: "Rufina", serif;
+  font-weight: 700;
+  font-size: 6.8rem;
+  line-height: 8.4rem;
+  color: #000000;
+  margin-top: 24px;
+}
+.main-container .menu-section__three .menu-container .menu-text-container .menu-item-container__text-container--text {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 2.4rem;
+  line-height: 140%;
+  color: #4d4d4d;
+  margin-top: 24px;
+}
+.main-container .reservation-container {
+  padding: 237px 138px 254px 138px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #ebf0e4;
+}
+.main-container .reservation-container__heading {
+  font-family: "Rufina", serif;
+  font-weight: 700;
+  font-size: 10.8rem;
+  line-height: 12rem;
+  color: #000000;
+}
+.main-container .reservation-container__title {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 2.4rem;
+  line-height: 140%;
+  color: #4d4d4d;
+  margin-top: 18px;
+}
+.main-container .reservation-container .reservation-form {
+  margin-top: 133px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 133px;
+}
+.main-container .reservation-container .reservation-form__input-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 48px;
+}
+.main-container .reservation-container .reservation-form__input-container > input, .main-container .reservation-container .reservation-form__input-container > select {
+  width: 516px;
+  height: 96px;
+  border: 2px solid #000000;
+  background: transparent;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 2.4rem;
+  line-height: 140%;
+  color: #000000;
+  padding-left: 40px;
+}
+.main-container .reservation-container .reservation-form__input-container input[type=date]::-webkit-inner-spin-button,
+.main-container .reservation-container .reservation-form__input-container input[type=date]::-webkit-calendar-picker-indicator {
+  display: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+.main-container .reservation-container .reservation-form__input-container > select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: transparent;
+  background-image: url(../assets/icons/angle-down-dark-icon.svg);
+  background-repeat: no-repeat;
+  background-position-x: calc(100% - 40px);
+  background-position-y: 50%;
+}
+.main-container .reservation-container .reservation-form__input-container > select .option-style {
+  background-color: #ebf0e4;
+  font-style: "Lato", sans-serif;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+.main-container .reservation-container .reservation-form > button {
+  width: 344px;
+  height: 80px;
+  background-color: #233000;
+  border: 2px solid #000000;
+  font-family: "Rufina", serif;
+  font-weight: 700;
+  font-size: 3.2rem;
+  line-height: 4.8rem;
+  color: #ffffff;
+}
+.main-container .footer-up__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #233000;
+  padding: 132px 138px 137px 138px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.main-container .footer-up__container--heading {
+  font-family: "Rufina";
+  font-weight: 700;
+  font-size: 6.8rem;
+  line-height: 8.4rem;
+  color: #ffffff;
+}
+.main-container .footer-up__container .footer-up__menu {
+  list-style: none;
+}
+.main-container .footer-up__container .footer-up__menu-item--01 {
+  font-family: "Rufina";
+  font-weight: 700;
+  font-size: 3.2rem;
+  line-height: 4.8rem;
+  color: #ffffff;
+}
+.main-container .footer-up__container .footer-up__menu-item {
+  font-family: "Lato";
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 2.5rem;
+  color: #ffffff;
+}
+.main-container .footer-up__container .footer-up__menu-item-02 {
+  margin-top: 55px;
+}
+.main-container .footer-up__container .footer-up__menu-item-03 {
+  margin-top: 28px;
+}
+.main-container .footer-up__container .footer-up__subscribe-container--title {
+  font-family: "Rufina";
+  font-weight: 700;
+  font-size: 3.2rem;
+  line-height: 4.8rem;
+  color: #ffffff;
+}
+.main-container .footer-up__container .footer-up__subscribe-container > input {
+  width: 522px;
+  height: 96px;
+  border: 2px solid #ffffff;
+  background-color: #233000;
+  padding-left: 40px;
+  margin-top: 55px;
+  margin-right: 28px;
+  outline: none;
+  font-family: "Lato";
+  font-weight: 400;
+  font-size: 2.4rem;
+  line-height: 140%;
+  color: #ffffff;
+}
+.main-container .footer-up__container .footer-up__subscribe-container > input:-moz-placeholder-shown {
+  font-family: "Lato";
+  font-weight: 400;
+  font-size: 2.4rem;
+  line-height: 140%;
+  color: #ffffff;
+}
+.main-container .footer-up__container .footer-up__subscribe-container > input:-ms-input-placeholder {
+  font-family: "Lato";
+  font-weight: 400;
+  font-size: 2.4rem;
+  line-height: 140%;
+  color: #ffffff;
+}
+.main-container .footer-up__container .footer-up__subscribe-container > input:placeholder-shown {
+  font-family: "Lato";
+  font-weight: 400;
+  font-size: 2.4rem;
+  line-height: 140%;
+  color: #ffffff;
+}
+.main-container .footer-up__container .footer-up__subscribe-container > button {
+  width: 241px;
+  height: 88px;
+  background-color: #5e6600;
+  border: none;
+  font-family: "Rufina";
+  font-weight: 700;
+  font-size: 3.2rem;
+  line-height: 4.8rem;
+  color: #ffffff;
+}
+.main-container .footer-up__container .footer-up__subscribe-container-text {
+  font-family: "Lato";
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 1.7rem;
+  color: #ffffff;
+  margin-top: 15px;
+}
+.main-container .footer-down__container {
+  border-top: 2px dashed #ffffff;
+  background-color: #233000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 58px 162px 74px 138px;
+}
+.main-container .footer-down__container > p {
+  font-family: "Lato";
+  font-weight: 400;
+  font-size: 2.4rem;
+  line-height: 140%;
+  color: #ffffff;
+}
+.main-container .footer-down__container .footer__social-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 28px;
+}
