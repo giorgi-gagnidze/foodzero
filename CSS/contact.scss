@@ -1,0 +1,402 @@
+@import "colors";
+@import "mixins";
+@import "reset";
+@import "typography";
+
+/* Default font size */
+
+html {
+  font-size: 62.5%;
+}
+
+.main-container {
+  max-width: 1920px;
+
+  /* Header styling */
+
+  & .header-section {
+    background-image: url(../assets/images/contact-page/header-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    & .header-container {
+      padding: 46px 138px 47px 138px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      & .logo-container {
+        display: flex;
+        align-items: center;
+        gap: 69px;
+      }
+      & .logo-container > img {
+        width: 307px;
+        height: 115px;
+        margin-left: -20px;
+      }
+      & .hamburger-menu {
+        display: flex;
+        gap: 14px;
+        flex-direction: column;
+        & > div {
+          border: 2px solid $white;
+          width: 46px;
+        }
+      }
+      & .right-container {
+        display: flex;
+        align-items: center;
+        gap: 26px;
+        & .header-phone {
+          @include fontStyle("Inter", 400, 26px, 31px, $white);
+        }
+        & > a {
+          @include fontStyle($rufina, 700, 32px, 48px, $white);
+          padding: 20px 46px;
+          border: 2px solid $white;
+          text-decoration: none;
+        }
+      }
+    }
+    & .hero-container {
+      padding-top: 207px;
+      padding-left: 138px;
+      padding-bottom: 130px;
+      padding-right: 138px;
+      display: flex;
+      flex-direction: column;
+      gap: 98px;
+      &__heading-container {
+        &--heading {
+          @include fontStyle($rufina, 700, 14.8rem, 15.2rem, $white);
+        }
+        &--text {
+          @include fontStyle($rufina, 700, 3.2rem, 4.8rem, $white);
+          margin-top: 50px;
+        }
+      }
+      &__time-container {
+        align-self: flex-end;
+        & .container-up {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding-bottom: 38px;
+          border-bottom: 2px dashed $white;
+          &__text-left {
+            @include fontStyle("Rufina", 700, 3.2rem, 4.8rem, $white);
+          }
+          &__text-right {
+            @include fontStyle("Lato", 400, 2.4rem, 140%, $white);
+          }
+        }
+        & .container-down {
+          display: flex;
+          justify-content: space-between;
+          gap: 133px;
+          padding-top: 38px;
+          & > ul {
+            list-style: none;
+            @include fontStyle("Lato", 400, 2.4rem, 140%, $white);
+          }
+        }
+      }
+    }
+  }
+  & .menu-section__one {
+    padding: 122px 178px 140px 138px;
+    background-image: url(../assets/images/menu-page/blueberry.png);
+    background-repeat: no-repeat;
+    background-position: top right;
+    &--heading-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      &--heading {
+        @include fontStyle($rufina, 700, 10.8rem, 12rem, $black);
+      }
+      &--title {
+        @include fontStyle($lato, 400, 2.4rem, 140%, $darkGray);
+        margin-top: 18px;
+      }
+    }
+    & .menu-container {
+      margin-top: 81px;
+      display: flex;
+      align-items: center;
+      gap: 102px;
+      .menu-image-container {
+        & > img {
+          width: 100%;
+        }
+      }
+      & .menu-text-container {
+        display: flex;
+        flex-direction: column;
+        gap: 58px;
+        & .menu-item-container {
+          display: flex;
+          flex-direction: column;
+          &__price {
+            @include fontStyle($rufina, 700, 4.8rem, 6.4rem, $black);
+            align-self: flex-end;
+          }
+          &__text-container {
+            margin-top: 12px;
+            border-top: 4px dashed $black;
+            &--heading {
+              @include fontStyle($rufina, 700, 6.8rem, 8.4rem, $black);
+              margin-top: 24px;
+            }
+            &--text {
+              @include fontStyle($lato, 400, 2.4rem, 140%, $darkGray);
+              margin-top: 24px;
+            }
+          }
+        }
+      }
+    }
+  }
+  & .menu-section__two {
+    padding: 122px 178px 140px 138px;
+    &--heading-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      &--heading {
+        @include fontStyle($rufina, 700, 10.8rem, 12rem, $black);
+      }
+      &--title {
+        @include fontStyle($lato, 400, 2.4rem, 140%, $darkGray);
+        margin-top: 18px;
+      }
+    }
+    & .menu-container {
+      margin-top: 81px;
+      display: flex;
+      align-items: center;
+      gap: 102px;
+      .menu-image-container {
+        & > img {
+          width: 100%;
+        }
+      }
+      & .menu-text-container {
+        display: flex;
+        flex-direction: column;
+        gap: 58px;
+        & .menu-item-container {
+          display: flex;
+          flex-direction: column;
+          &__price {
+            @include fontStyle($rufina, 700, 4.8rem, 6.4rem, $black);
+            align-self: flex-end;
+          }
+          &__text-container {
+            margin-top: 12px;
+            border-top: 4px dashed $black;
+            &--heading {
+              @include fontStyle($rufina, 700, 6.8rem, 8.4rem, $black);
+              margin-top: 24px;
+            }
+            &--text {
+              @include fontStyle($lato, 400, 2.4rem, 140%, $darkGray);
+              margin-top: 24px;
+            }
+          }
+        }
+      }
+    }
+  }
+  & .menu-section__three {
+    padding: 122px 178px 208px 138px;
+    background-image: url(../assets/images/menu-page/avocado.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+    &--heading-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      &--heading {
+        @include fontStyle($rufina, 700, 10.8rem, 12rem, $black);
+      }
+      &--title {
+        @include fontStyle($lato, 400, 2.4rem, 140%, $darkGray);
+        margin-top: 18px;
+      }
+    }
+    & .menu-container {
+      margin-top: 153px;
+      display: flex;
+      align-items: center;
+      gap: 102px;
+      .menu-image-container {
+        & > img {
+          width: 100%;
+        }
+      }
+      & .menu-text-container {
+        display: flex;
+        flex-direction: column;
+        gap: 58px;
+        & .menu-item-container {
+          display: flex;
+          flex-direction: column;
+          &__price {
+            @include fontStyle($rufina, 700, 4.8rem, 6.4rem, $black);
+            align-self: flex-end;
+          }
+          &__text-container {
+            margin-top: 12px;
+            border-top: 4px dashed $black;
+            &--heading {
+              @include fontStyle($rufina, 700, 6.8rem, 8.4rem, $black);
+              margin-top: 24px;
+            }
+            &--text {
+              @include fontStyle($lato, 400, 2.4rem, 140%, $darkGray);
+              margin-top: 24px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  /* Reservation section styling */
+
+  .reservation-container {
+    padding: 237px 138px 254px 138px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $lightGreen;
+    &__heading {
+      @include fontStyle($rufina, 700, 10.8rem, 12rem, $black);
+    }
+    &__title {
+      @include fontStyle($lato, 400, 2.4rem, 140%, $darkGray);
+      margin-top: 18px;
+    }
+    & .reservation-form {
+      margin-top: 133px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 133px;
+      &__input-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 48px;
+        & > input,
+        & > select {
+          width: 516px;
+          height: 96px;
+          border: 2px solid $black;
+          background: transparent;
+          @include fontStyle($lato, 400, 2.4rem, 140%, $black);
+          padding-left: 40px;
+        }
+        & input[type="date"]::-webkit-inner-spin-button,
+        input[type="date"]::-webkit-calendar-picker-indicator {
+          display: none;
+          -moz-appearance: none;
+          -webkit-appearance: none;
+        }
+        & > select {
+          -webkit-appearance: none;
+          -moz-appearance: none;
+          appearance: none;
+          background: transparent;
+          background-image: url(../assets/icons/angle-down-dark-icon.svg);
+          background-repeat: no-repeat;
+          background-position-x: calc(100% - 40px);
+          background-position-y: 50%;
+          .option-style {
+            background-color: $lightGreen;
+            font-style: $lato;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+          }
+        }
+      }
+      & > button {
+        width: 344px;
+        height: 80px;
+        background-color: $darkGreen;
+        border: 2px solid $black;
+        @include fontStyle($rufina, 700, 3.2rem, 4.8rem, $white);
+      }
+    }
+  }
+  .footer-up__container {
+    display: flex;
+    background-color: $darkGreen;
+    padding: 132px 138px 137px 138px;
+    justify-content: space-between;
+    align-items: center;
+    &--heading {
+      @include fontStyle("Rufina", 700, 6.8rem, 8.4rem, $white);
+    }
+    & .footer-up__menu {
+      list-style: none;
+      &-item--01 {
+        @include fontStyle("Rufina", 700, 3.2rem, 4.8rem, $white);
+      }
+      &-item {
+        @include fontStyle("Lato", 400, 1.8rem, 2.5rem, $white);
+      }
+      &-item-02 {
+        margin-top: 55px;
+      }
+      &-item-03 {
+        margin-top: 28px;
+      }
+    }
+    & .footer-up__subscribe-container {
+      &--title {
+        @include fontStyle("Rufina", 700, 3.2rem, 4.8rem, $white);
+      }
+      & > input {
+        width: 522px;
+        height: 96px;
+        border: 2px solid $white;
+        background-color: $darkGreen;
+        padding-left: 40px;
+        margin-top: 55px;
+        margin-right: 28px;
+        outline: none;
+        @include fontStyle("Lato", 400, 2.4rem, 140%, $white);
+        &:placeholder-shown {
+          @include fontStyle("Lato", 400, 2.4rem, 140%, $white);
+        }
+      }
+      & > button {
+        width: 241px;
+        height: 88px;
+        background-color: $middleGreen;
+        border: none;
+        @include fontStyle("Rufina", 700, 3.2rem, 4.8rem, $white);
+      }
+      &-text {
+        @include fontStyle("Lato", 400, 1.4rem, 1.7rem, $white);
+        margin-top: 15px;
+      }
+    }
+  }
+
+  .footer-down__container {
+    border-top: 2px dashed $white;
+    background-color: $darkGreen;
+    display: flex;
+    justify-content: space-between;
+    padding: 58px 162px 74px 138px;
+    & > p {
+      @include fontStyle("Lato", 400, 2.4rem, 140%, $white);
+    }
+    & .footer__social-container {
+      display: flex;
+      gap: 28px;
+    }
+  }
+}
