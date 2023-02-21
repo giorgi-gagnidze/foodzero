@@ -102,161 +102,51 @@ html {
       }
     }
   }
-  & .menu-section__one {
-    padding: 122px 178px 140px 138px;
-    background-image: url(../assets/images/menu-page/blueberry.png);
-    background-repeat: no-repeat;
-    background-position: top right;
-    &--heading-container {
+
+  .content-section {
+    padding: 272px 138px 185px 138px;
+    &__container-up {
       display: flex;
-      flex-direction: column;
-      align-items: center;
-      &--heading {
-        @include fontStyle($rufina, 700, 10.8rem, 12rem, $black);
-      }
-      &--title {
-        @include fontStyle($lato, 400, 2.4rem, 140%, $darkGray);
-        margin-top: 18px;
-      }
-    }
-    & .menu-container {
-      margin-top: 81px;
-      display: flex;
-      align-items: center;
-      gap: 102px;
-      .menu-image-container {
+      gap: 202px;
+      &--image-container {
         & > img {
           width: 100%;
         }
       }
-      & .menu-text-container {
-        display: flex;
-        flex-direction: column;
-        gap: 58px;
-        & .menu-item-container {
-          display: flex;
-          flex-direction: column;
-          &__price {
-            @include fontStyle($rufina, 700, 4.8rem, 6.4rem, $black);
-            align-self: flex-end;
-          }
-          &__text-container {
-            margin-top: 12px;
-            border-top: 4px dashed $black;
-            &--heading {
-              @include fontStyle($rufina, 700, 6.8rem, 8.4rem, $black);
-              margin-top: 24px;
-            }
-            &--text {
-              @include fontStyle($lato, 400, 2.4rem, 140%, $darkGray);
-              margin-top: 24px;
-            }
-          }
+      &--text-container {
+        margin-top: 20%;
+        & > p {
+          @include fontStyle("Rufina", 700, 3.2rem, 4.8rem, $darkGreen);
+        }
+        & span {
+          color: $Green;
         }
       }
     }
-  }
-  & .menu-section__two {
-    padding: 122px 178px 140px 138px;
-    &--heading-container {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      &--heading {
-        @include fontStyle($rufina, 700, 10.8rem, 12rem, $black);
-      }
-      &--title {
-        @include fontStyle($lato, 400, 2.4rem, 140%, $darkGray);
-        margin-top: 18px;
-      }
-    }
-    & .menu-container {
-      margin-top: 81px;
+    &__container-down {
       display: flex;
       align-items: center;
-      gap: 102px;
-      .menu-image-container {
+      margin-top: 145px;
+      &--text-container {
+        margin-right: 60px;
+        & > p {
+          @include fontStyle("Rufina", 700, 3.2rem, 4.8rem, $darkGreen);
+        }
+        & > a {
+          border: 2px solid $darkGreen;
+          display: flex;
+          width: 293px;
+          height: 88px;
+          @include fontStyle("Rufina", 700, 3.2rem, 4.8rem, $black);
+          text-decoration: none;
+          justify-content: center;
+          align-items: center;
+          margin-top: 53px;
+        }
+      }
+      &--image-container {
         & > img {
           width: 100%;
-        }
-      }
-      & .menu-text-container {
-        display: flex;
-        flex-direction: column;
-        gap: 58px;
-        & .menu-item-container {
-          display: flex;
-          flex-direction: column;
-          &__price {
-            @include fontStyle($rufina, 700, 4.8rem, 6.4rem, $black);
-            align-self: flex-end;
-          }
-          &__text-container {
-            margin-top: 12px;
-            border-top: 4px dashed $black;
-            &--heading {
-              @include fontStyle($rufina, 700, 6.8rem, 8.4rem, $black);
-              margin-top: 24px;
-            }
-            &--text {
-              @include fontStyle($lato, 400, 2.4rem, 140%, $darkGray);
-              margin-top: 24px;
-            }
-          }
-        }
-      }
-    }
-  }
-  & .menu-section__three {
-    padding: 122px 178px 208px 138px;
-    background-image: url(../assets/images/menu-page/avocado.png);
-    background-repeat: no-repeat;
-    background-position: top center;
-    &--heading-container {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      &--heading {
-        @include fontStyle($rufina, 700, 10.8rem, 12rem, $black);
-      }
-      &--title {
-        @include fontStyle($lato, 400, 2.4rem, 140%, $darkGray);
-        margin-top: 18px;
-      }
-    }
-    & .menu-container {
-      margin-top: 153px;
-      display: flex;
-      align-items: center;
-      gap: 102px;
-      .menu-image-container {
-        & > img {
-          width: 100%;
-        }
-      }
-      & .menu-text-container {
-        display: flex;
-        flex-direction: column;
-        gap: 58px;
-        & .menu-item-container {
-          display: flex;
-          flex-direction: column;
-          &__price {
-            @include fontStyle($rufina, 700, 4.8rem, 6.4rem, $black);
-            align-self: flex-end;
-          }
-          &__text-container {
-            margin-top: 12px;
-            border-top: 4px dashed $black;
-            &--heading {
-              @include fontStyle($rufina, 700, 6.8rem, 8.4rem, $black);
-              margin-top: 24px;
-            }
-            &--text {
-              @include fontStyle($lato, 400, 2.4rem, 140%, $darkGray);
-              margin-top: 24px;
-            }
-          }
         }
       }
     }
@@ -265,17 +155,23 @@ html {
   /* Reservation section styling */
 
   .reservation-container {
-    padding: 237px 138px 254px 138px;
+    padding: 214px 138px 254px 174px;
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: $lightGreen;
-    &__heading {
-      @include fontStyle($rufina, 700, 10.8rem, 12rem, $black);
-    }
-    &__title {
-      @include fontStyle($lato, 400, 2.4rem, 140%, $darkGray);
-      margin-top: 18px;
+    background-image: url(../assets/images/contact-page/mint.png);
+    background-position: top 50px left 159px;
+    background-repeat: no-repeat;
+    &__heading-container {
+      &--heading {
+        @include fontStyle($rufina, 700, 10.8rem, 12rem, $black);
+      }
+      &--title {
+        @include fontStyle($lato, 400, 2.4rem, 140%, $darkGray);
+        text-align: left;
+        margin-top: 18px;
+      }
     }
     & .reservation-form {
       margin-top: 133px;
@@ -289,7 +185,7 @@ html {
         gap: 48px;
         & > input,
         & > select {
-          width: 516px;
+          width: 779px;
           height: 96px;
           border: 2px solid $black;
           background: transparent;
@@ -319,13 +215,26 @@ html {
             appearance: none;
           }
         }
+        & .email {
+          display: block;
+          width: 100%;
+        }
+        & .phone {
+          display: block;
+          width: 100%;
+        }
+        & .person {
+          display: block;
+          width: 100%;
+        }
       }
       & > button {
         width: 344px;
         height: 80px;
-        background-color: $darkGreen;
+        background-color: $middleGreen;
         border: 2px solid $black;
         @include fontStyle($rufina, 700, 3.2rem, 4.8rem, $white);
+        margin-top: 82px;
       }
     }
   }
