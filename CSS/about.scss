@@ -101,56 +101,155 @@ html {
 
   /* Staff section styling */
 
-  & .menu-section__three {
-    padding: 122px 178px 208px 138px;
-    background-image: url(../assets/images/menu-page/avocado.png);
-    background-repeat: no-repeat;
-    background-position: top center;
-    &--heading-container {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      &--heading {
-        @include fontStyle($rufina, 700, 10.8rem, 12rem, $black);
+  & .staff-section {
+    padding: 162px 176px 299px 171px;
+    display: flex;
+    gap: 121px;
+    & .staff-container-left {
+      &__header-container {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &--heading {
+          @include fontStyle($rufina, 700, 6.8rem, 8.4rem, $black);
+        }
+        &--title {
+          @include fontStyle($lato, 400, 2.4rem, 140%, $black);
+          margin-top: 24px;
+        }
       }
-      &--title {
-        @include fontStyle($lato, 400, 2.4rem, 140%, $darkGray);
-        margin-top: 18px;
-      }
-    }
-    & .menu-container {
-      margin-top: 153px;
-      display: flex;
-      align-items: center;
-      gap: 102px;
-      .menu-image-container {
+      &__image-container {
+        margin-top: 24px;
         & > img {
           width: 100%;
         }
       }
-      & .menu-text-container {
+      &__text-container {
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 449px;
+        &--text {
+          @include fontStyle($lato, 400, 2.4rem, 140%, $darkGray);
+          max-width: 510px;
+          text-align: right;
+        }
+      }
+    }
+    & .staff-container-right {
+      &__text-container {
+        margin-top: 160px;
+        & > p {
+          @include fontStyle($lato, 400, 2.4rem, 140%, $darkGray);
+          max-width: 510px;
+        }
+      }
+      &__header-container {
+        margin-top: 329px;
+        text-align: center;
+        &--heading {
+          @include fontStyle($rufina, 700, 6.8rem, 8.4rem, $black);
+        }
+        &--title {
+          @include fontStyle($lato, 400, 2.4rem, 140%, $black);
+          margin-top: 24px;
+        }
+      }
+      &__image-container {
+        margin-top: 24px;
+        & > img {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  /* Video section styling */
+
+  & .video-section {
+    background-image: url(../assets/images/about-page/content-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    &-background {
+      padding: 238px 454px 404px 454px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: $darkGreen;
+      opacity: 0.7;
+      & .video-section--header {
+        @include fontStyle($rufina, 700, 10.8rem, 12rem, $white);
+      }
+      & .video-section--title {
+        @include fontStyle($lato, 400, 2.4rem, 140%, $white);
+        margin-top: 18px;
+      }
+      & > img {
+        margin-top: 82px;
+      }
+    }
+  }
+
+  /* Process section styling */
+
+  & .process-section {
+    padding: 267px 138px 320px 138px;
+    background-image: url(../assets/images/about-page/rosemary-01.png),
+      url(../assets/images/about-page/rosemary.png);
+    background-repeat: no-repeat, no-repeat;
+    background-position: top right, bottom 32px left;
+    &__heading {
+      @include fontStyle($rufina, 700, 10.8rem, 12rem, $black);
+      text-align: center;
+    }
+    & .process-container-one {
+      display: flex;
+      gap: 102px;
+      margin-top: 174px;
+      &__image-container {
+        & > img {
+          width: 100%;
+        }
+      }
+      &__text-container {
+        &--heading {
+          @include fontStyle($rufina, 700, 8.8rem, 120%, $black);
+        }
+        &--text {
+          @include fontStyle($lato, 400, 2.4rem, 140%, $darkGray);
+          max-width: 616px;
+        }
+      }
+    }
+    & .process-container-two {
+      display: flex;
+      margin-top: 118px;
+      padding-left: 71px;
+      gap: 274px;
+      &__container-left,
+      &__container-right {
         display: flex;
         flex-direction: column;
-        gap: 58px;
-        & .menu-item-container {
-          display: flex;
-          flex-direction: column;
-          &__price {
-            @include fontStyle($rufina, 700, 4.8rem, 6.4rem, $black);
-            align-self: flex-end;
-          }
-          &__text-container {
-            margin-top: 12px;
-            border-top: 4px dashed $black;
-            &--heading {
-              @include fontStyle($rufina, 700, 6.8rem, 8.4rem, $black);
-              margin-top: 24px;
-            }
-            &--text {
-              @include fontStyle($lato, 400, 2.4rem, 140%, $darkGray);
-              margin-top: 24px;
-            }
-          }
+        & > img {
+          width: 100%;
+        }
+        &--heading {
+          @include fontStyle($rufina, 700, 8.8rem, 120%, $black);
+        }
+        &--text {
+          @include fontStyle($lato, 400, 2.4rem, 140%, $darkGray);
+          margin-top: 28px;
+        }
+      }
+      &__container-left {
+        margin-top: 154px;
+        & > img {
+          margin-top: 46px;
+        }
+      }
+      &__container-right {
+        &--heading {
+          margin-top: 46px;
         }
       }
     }
