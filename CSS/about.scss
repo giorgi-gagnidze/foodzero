@@ -15,7 +15,7 @@ html {
   /* Header styling */
 
   & .header-section {
-    background-image: url(../assets/images/contact-page/header-bg.png);
+    background-image: url(../assets/images/about-page/header-bg.png);
     background-size: cover;
     background-repeat: no-repeat;
     & .header-container {
@@ -58,95 +58,99 @@ html {
       }
     }
     & .hero-container {
-      padding-top: 207px;
-      padding-left: 138px;
-      padding-bottom: 130px;
-      padding-right: 138px;
+      padding: 202px 219px 372px 138px;
       display: flex;
-      flex-direction: column;
-      gap: 98px;
-      &__heading-container {
-        &--heading {
-          @include fontStyle($rufina, 700, 14.8rem, 15.2rem, $white);
-        }
-        &--text {
-          @include fontStyle($rufina, 700, 3.2rem, 4.8rem, $white);
-          margin-top: 50px;
-        }
+      justify-content: flex-end;
+      &__heading {
+        @include fontStyle($rufina, 700, 14.8rem, 15.2rem, $white);
       }
-      &__time-container {
-        align-self: flex-end;
-        & .container-up {
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
-          padding-bottom: 38px;
-          border-bottom: 2px dashed $white;
-          &__text-left {
-            @include fontStyle($rufina, 700, 3.2rem, 4.8rem, $white);
-          }
-          &__text-right {
-            @include fontStyle($lato, 400, 2.4rem, 140%, $white);
-          }
-        }
-        & .container-down {
-          display: flex;
-          justify-content: space-between;
-          gap: 133px;
-          padding-top: 38px;
-          & > ul {
-            list-style: none;
-            @include fontStyle($lato, 400, 2.4rem, 140%, $white);
-          }
-        }
+      &__text {
+        @include fontStyle($rufina, 700, 3.2rem, 4.8rem, $white);
+        margin-top: 50px;
+        max-width: 915px;
       }
     }
   }
 
-  .content-section {
-    padding: 272px 138px 185px 138px;
-    &__container-up {
-      display: flex;
-      gap: 202px;
-      &--image-container {
-        & > img {
-          width: 100%;
-        }
+  /* Story section styling */
+
+  & .story-section {
+    padding: 218px 138px 117px 215px;
+    background-image: url(../assets/images/about-page/tomato-vector.png);
+    background-repeat: no-repeat;
+    background-position: left 42% top 94px;
+    display: flex;
+    gap: 107px;
+    &__text-container {
+      max-width: 668px;
+      margin-top: 233px;
+      &--heading {
+        @include fontStyle($rufina, 700, 10.8rem, 12rem, $black);
       }
-      &--text-container {
-        margin-top: 20%;
-        & > p {
-          @include fontStyle($rufina, 700, 3.2rem, 4.8rem, $darkGreen);
-        }
-        & span {
-          color: $Green;
-        }
+      &--text {
+        @include fontStyle($lato, 400, 2.4rem, 140%, $darkGray);
+        margin-top: 18px;
       }
     }
-    &__container-down {
+    &__image-container {
+      & > img {
+        width: 100%;
+      }
+    }
+  }
+
+  /* Staff section styling */
+
+  & .menu-section__three {
+    padding: 122px 178px 208px 138px;
+    background-image: url(../assets/images/menu-page/avocado.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+    &--heading-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      &--heading {
+        @include fontStyle($rufina, 700, 10.8rem, 12rem, $black);
+      }
+      &--title {
+        @include fontStyle($lato, 400, 2.4rem, 140%, $darkGray);
+        margin-top: 18px;
+      }
+    }
+    & .menu-container {
+      margin-top: 153px;
       display: flex;
       align-items: center;
-      margin-top: 145px;
-      &--text-container {
-        margin-right: 60px;
-        & > p {
-          @include fontStyle($rufina, 700, 3.2rem, 4.8rem, $darkGreen);
-        }
-        & > a {
-          border: 2px solid $darkGreen;
-          display: flex;
-          width: 293px;
-          height: 88px;
-          @include fontStyle($rufina, 700, 3.2rem, 4.8rem, $black);
-          text-decoration: none;
-          justify-content: center;
-          align-items: center;
-          margin-top: 53px;
-        }
-      }
-      &--image-container {
+      gap: 102px;
+      .menu-image-container {
         & > img {
           width: 100%;
+        }
+      }
+      & .menu-text-container {
+        display: flex;
+        flex-direction: column;
+        gap: 58px;
+        & .menu-item-container {
+          display: flex;
+          flex-direction: column;
+          &__price {
+            @include fontStyle($rufina, 700, 4.8rem, 6.4rem, $black);
+            align-self: flex-end;
+          }
+          &__text-container {
+            margin-top: 12px;
+            border-top: 4px dashed $black;
+            &--heading {
+              @include fontStyle($rufina, 700, 6.8rem, 8.4rem, $black);
+              margin-top: 24px;
+            }
+            &--text {
+              @include fontStyle($lato, 400, 2.4rem, 140%, $darkGray);
+              margin-top: 24px;
+            }
+          }
         }
       }
     }
@@ -155,23 +159,17 @@ html {
   /* Reservation section styling */
 
   .reservation-container {
-    padding: 214px 138px 254px 174px;
+    padding: 237px 138px 254px 138px;
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: $lightGreen;
-    background-image: url(../assets/images/contact-page/mint.png);
-    background-position: top 50px left 159px;
-    background-repeat: no-repeat;
-    &__heading-container {
-      &--heading {
-        @include fontStyle($rufina, 700, 10.8rem, 12rem, $black);
-      }
-      &--title {
-        @include fontStyle($lato, 400, 2.4rem, 140%, $darkGray);
-        text-align: left;
-        margin-top: 18px;
-      }
+    &__heading {
+      @include fontStyle($rufina, 700, 10.8rem, 12rem, $black);
+    }
+    &__title {
+      @include fontStyle($lato, 400, 2.4rem, 140%, $darkGray);
+      margin-top: 18px;
     }
     & .reservation-form {
       margin-top: 133px;
@@ -185,7 +183,7 @@ html {
         gap: 48px;
         & > input,
         & > select {
-          width: 779px;
+          width: 516px;
           height: 96px;
           border: 2px solid $black;
           background: transparent;
@@ -215,26 +213,13 @@ html {
             appearance: none;
           }
         }
-        & .email {
-          display: block;
-          width: 100%;
-        }
-        & .phone {
-          display: block;
-          width: 100%;
-        }
-        & .person {
-          display: block;
-          width: 100%;
-        }
       }
       & > button {
         width: 344px;
         height: 80px;
-        background-color: $middleGreen;
+        background-color: $darkGreen;
         border: 2px solid $black;
         @include fontStyle($rufina, 700, 3.2rem, 4.8rem, $white);
-        margin-top: 82px;
       }
     }
   }
@@ -245,15 +230,15 @@ html {
     justify-content: space-between;
     align-items: center;
     &--heading {
-      @include fontStyle($rufina, 700, 6.8rem, 8.4rem, $white);
+      @include fontStyle("Rufina", 700, 6.8rem, 8.4rem, $white);
     }
     & .footer-up__menu {
       list-style: none;
       &-item--01 {
-        @include fontStyle($rufina, 700, 3.2rem, 4.8rem, $white);
+        @include fontStyle("Rufina", 700, 3.2rem, 4.8rem, $white);
       }
       &-item {
-        @include fontStyle($lato, 400, 1.8rem, 2.5rem, $white);
+        @include fontStyle("Lato", 400, 1.8rem, 2.5rem, $white);
       }
       &-item-02 {
         margin-top: 55px;
@@ -264,7 +249,7 @@ html {
     }
     & .footer-up__subscribe-container {
       &--title {
-        @include fontStyle($rufina, 700, 3.2rem, 4.8rem, $white);
+        @include fontStyle("Rufina", 700, 3.2rem, 4.8rem, $white);
       }
       & > input {
         width: 522px;
@@ -275,9 +260,9 @@ html {
         margin-top: 55px;
         margin-right: 28px;
         outline: none;
-        @include fontStyle($lato, 400, 2.4rem, 140%, $white);
+        @include fontStyle("Lato", 400, 2.4rem, 140%, $white);
         &:placeholder-shown {
-          @include fontStyle($lato, 400, 2.4rem, 140%, $white);
+          @include fontStyle("Lato", 400, 2.4rem, 140%, $white);
         }
       }
       & > button {
@@ -285,10 +270,10 @@ html {
         height: 88px;
         background-color: $middleGreen;
         border: none;
-        @include fontStyle($rufina, 700, 3.2rem, 4.8rem, $white);
+        @include fontStyle("Rufina", 700, 3.2rem, 4.8rem, $white);
       }
       &-text {
-        @include fontStyle($lato, 400, 1.4rem, 1.7rem, $white);
+        @include fontStyle("Lato", 400, 1.4rem, 1.7rem, $white);
         margin-top: 15px;
       }
     }
@@ -301,7 +286,7 @@ html {
     justify-content: space-between;
     padding: 58px 162px 74px 138px;
     & > p {
-      @include fontStyle($lato, 400, 2.4rem, 140%, $white);
+      @include fontStyle("Lato", 400, 2.4rem, 140%, $white);
     }
     & .footer__social-container {
       display: flex;
